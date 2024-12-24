@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "vasm: Build active file",
+            "command": "vasmm68k_mot",
+            "args": [
+                "-o", "\"${workspaceFolder}\\${fileBasenameNoExtension}.TOS\"",
+                // "-L", "\"${workspaceFolder}\\${fileBasenameNoExtension}.LST\"",
+                "-Ftos",
+                "-align",
+                "-noesc",           // Required for devpac compatibility
+                "-no-opt",          // Don't optimize by default, because of self-modifying code
+                // "-opt-speed",       // Enable optimizations to see what can be done
+                // "-opt-mul",
+                "-showopt",
+                // "-spaces",
+                // "-devpac",
+                // "-nosym",
+                "-nowarn=51",       // Don't warn about aligning code, it should be aligned
+                "-nowarn=58",       // Don't warn about aligning data, it should be aligned
+                "-maxerrors=50",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$vasm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

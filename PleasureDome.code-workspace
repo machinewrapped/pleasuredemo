@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"[m68k]": {
+			"editor.rulers": []
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"gigabates.m68k-lsp"
+		]
+	}
+}
