@@ -7,9 +7,9 @@ If you want to be able to be able to run The Ultramega Scroller at all you'll ne
 
 *If you want to add music back in to the screens you can download equivalent rips from [The SNDH Archive](https://sndh.atari.org/). This will require uncommenting some code in each screen and adapting it to work with the SNDH format rather than the custom .MSX format which we used for our rips (basically a matter of replacing +4 with +8 in the VBL jump address). I will probably update the screens to work with the SNDH format by default, so that dropping in an SNDH file is all that is needed to get music.*
 
-Work on this demo began in 1990, but came to a halt when Zax's ST overheated and died and wasn't resumed until 1991.
+Work on this demo began in 1990, but came to a halt when Zax's ST overheated and died. It was resumed in 1991.
 
-Screens were written and rewritten until in November 1991 the demo was ready for release - pending permission to use a sample from U2's The Fly on The Ultramega Scroller.
+Screens were written and rewritten until in November 1991 the demo was ready for release - pending permission to use a sample on The Ultramega Scroller.
 
 We continued to tinker with some of the screens while we waited, until a year later we finally got a reply. They said "no".
 
