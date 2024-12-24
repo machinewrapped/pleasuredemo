@@ -1,5 +1,11 @@
 # The Pleasuredemo (1990-2024)
-Source code for The Pleasuredemo, an Atari ST demo collection from The Cyberpunks (UK)
+Source code for [The Pleasuredemo](https://demozoo.org/productions/362493/), an Atari ST demo collection from The Cyberpunks (UK)
+
+**Please note: the music has been removed from all screens because I want to release the demo under a permissive license and the music was all ripped**
+
+If you want to be able to be able to run The Ultramega Scroller at all you'll need the sample file, which can be extracted from the disk image at [DemoZoo](https://demozoo.org/productions/362493/).
+
+*If you want to add music back in to the screens you can download equivalent rips from [The SNDH Archive](https://sndh.atari.org/). This will require uncommenting some code in each screen and adapting it to work with the SNDH format rather than the custom .MSX format which we used for our rips (basically a matter of replacing +4 with +8 in the VBL jump address). I will probably update the screens to work with the SNDH format by default, so that dropping in an SNDH file is all that is needed to get music.*
 
 Work on this demo began in 1990, but came to a halt when Zax's ST overheated and died and wasn't resumed until 1991.
 
