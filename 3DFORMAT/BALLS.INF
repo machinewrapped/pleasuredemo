@@ -1,0 +1,9 @@
+file=D:/Development/AtariST/HDD/CYBERNEW/3DFORMAT/BALLS.DAT
+h=16
+w=2
+b=2
+scale=4
+color0=$000
+color1=$300
+color2=$500
+color3=$700
