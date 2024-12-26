@@ -1,0 +1,84 @@
+	bsr mesmak
+	
+	clr.w -(sp)
+	trap #1
+
+mesmak	lea mesij(pc),a0
+	lea bufr(pc),a1
+	move.w #(bufr-mesij)-1,d7
+makmes	clr.w d0
+	move.b (a0)+,d0
+	cmp.b #" ",d0
+	beq.s spac
+	sub.b #"A",d0
+	mulu #108,d0
+	move.w d0,(a1)+
+basp	dbra d7,makmes
+	lea bufr(pc),a0
+	rts
+
+spac	move.w #-1,(a1)+
+	bra.s basp
+
+mesij
+	dc.b "                    A"
+	dc.b "                    B"
+	dc.b "   PRESS F\ TO F\[  A"
+	dc.b "                    B"
+	dc.b "   WELCOME TO THE   B"
+	dc.b "   REFLEXION DEMO   A"
+	dc.b "                    A"
+	dc.b "ALL CODINGf GRAPHICSA"
+	dc.b " MUSIC RIPPING ETCe B"
+	dc.b "       BY ZAX       B"
+	dc.b "  OF THE CYBERPUNKS A"
+	dc.b "                    A"
+	dc.b " I AM VERY PROUD OF A"
+	dc.b "     THIS SCREEN    A"
+	dc.b "                    A"
+	dc.b "   IT TOOK ABOUT _  A"
+	dc.b "  DAYS TO CODE ITe  B"
+	dc.b " THE DATE IS \`j_jd\A"
+	dc.b "                    A"
+	dc.b " I WOULD HAVE LIKED A"
+	dc.b "  ANOTHER SCROLLER  A"
+	dc.b " BECAUSE IT IS HARD A"
+	dc.b "  TO WRITE MESSAGES A"
+	dc.b "  FOR THIS ONEf BUT A"
+	dc.b "   I AM USING SLOW  A"
+	dc.b " SPRITE ROUTINES ANDA"
+	dc.b " I CANmT BE BOTHEREDA"
+	dc.b " ADDING FASTER ONES A"
+	dc.b "                    A"
+	dc.b "  MEGAjGREETINGS TO A"
+	dc.b "    THE CAREBEARS   A"
+	dc.b "    THE LOST BOYS   A"
+	dc.b "         TEX        B"
+	dc.b " UNLIMITED MATRICKS B"
+	dc.b "  XXX INTERNATIONAL B"
+	dc.b "        VILM        B"
+	dc.b "        ROBE        B"
+	dc.b "      PHANTOM \     B"
+	dc.b "       MARTYN       B"
+	dc.b "       FALCON       B"
+	dc.b "      GREATGUY      B"
+	dc.b "      THE SAINT     B"
+	dc.b "     THE PHALANX    B"
+	dc.b "     AENIGMATICA    B"
+	dc.b "  THE BLADERUNNERS  B"
+	dc.b "   THE MEDWAY BOYS  B"
+	dc.b "     DELTA FORCE    B"
+	dc.b "      LEVEL \a      B"
+	dc.b "      TNTjCREW      B"
+	dc.b "     SYNCf OMEGA    B"
+	dc.b "     DYNAMIC DUO    B"
+	dc.b "         ATG        B"
+	dc.b "    PAULO SIMOES    B"
+	dc.b "   BLACK MONOLITHS  B"
+	dc.b "                    A"
+	dc.b "                    A"
+	dc.b "                    B"
+	dc.b "    TIME TO WRAP    A"
+
+	EVEN
+bufr
