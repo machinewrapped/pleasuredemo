@@ -5,7 +5,10 @@
 ; and does not work well under emulation or with modern TOS versions.
 ; 
 ; This version supports fully relocatable TOS files with optional compression with Pack-Ice 2.1
-; It has been written from scratch and should be assembled with VASM
+; It has been written from scratch and should be assembled with VASM.
+;
+; It can be configured to run the 1992 or 2024 configurations of The Pleasuredemo,
+; but since the menu for the 1992 version crashes under emulation there are no current plans to release it.
 
 screen_address		equ $78000
 screen_data_size	equ 16
