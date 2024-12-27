@@ -1,15 +1,15 @@
 # The Pleasuredemo (1990-2024)
 Source code for [The Pleasuredemo](https://demozoo.org/productions/362493/), an Atari ST demo collection from The Cyberpunks (UK)
 
-**Please note: the music has been removed from all screens because I want to release the demo under a permissive license and the music was all ripped**
+**Please note: the music has been removed from all screens because I want to release the demo under a permissive license and the music was all ripped.**
 
-If you want to be able to be able to run The Ultramega Scroller at all you'll need the sample file, which can be extracted from the disk image at [DemoZoo](https://demozoo.org/productions/362493/).
+The Ultramega Scroller has been adapted to run without the sample file, but it can be extracted from the disk image at [DemoZoo](https://demozoo.org/productions/362493/) if you want to have the audio.
 
 *If you want to add music back in to the screens you can download equivalent rips from [The SNDH Archive](https://sndh.atari.org/). This will require uncommenting some code in each screen and adapting it to work with the SNDH format rather than the custom .MSX format which we used for our rips (basically a matter of replacing +4 with +8 in the VBL jump address). I will probably update the screens to work with the SNDH format by default, so that dropping in an SNDH file is all that is needed to get music.*
 
 Work on this demo began in 1990, but came to a halt when Zax's ST overheated and died. It was resumed in 1991.
 
-Screens were written and rewritten until in November 1991 the demo was ready for release - pending permission to use a sample on The Ultramega Scroller.
+Screens were written and rewritten until in November 1991 the demo was ready for release - pending permission to use the sample on The Ultramega Scroller.
 
 We continued to tinker with some of the screens while we waited, until a year later we finally got a reply. They said "no".
 
@@ -23,14 +23,14 @@ Unfortunately, the 1992 version does not run under emulation (both Hatari and St
 
 I started working on a new bootstrap to see if I could get it running, which meant dusting off long unused 68000 assembly knowledge.
 
-Eventually I decided it would be better to assemble a new version, removing some older screens that didn't hold up as well.
+Eventually I decided it would be better to put together a new version, removing some older screens that didn't hold up as well.
 
 This involved reverse engineering the code to understand it (apparently we were not big on comments or meaningul names!),
 and fixing all the screens to build with VASM and to run either from the new boostrap or as standalone executables.
 
 Three screens were removed (they may be released separately) and one was added (3D Format aka Small Balls was originally a standalone demo).
 
-Some scrolling messages were edited for brevity, and to remove some of the more embarrasing things I wrote as a teen!
+Some scrolling messages were edited for brevity, and to remove some of the more embarrasing things I wrote as a teenager!
 
 Here are the details for each screen, as best as I can remember them.
 
@@ -48,7 +48,7 @@ I think this was written in late 1991 to replace the original menu, which dated 
 2024: updated with the new screen lineup and to work with the new boostrap.
 
 ## THE ULTRAMEGA SCROLLER
-Written in 1991, based on an older screen, updated in 1992 with new colours and cleaner sample playback.
+Written in 1991, based on an older screen, updated in 1992 with cleaner sample playback.
 
 2024: digitally resampled the music and resequenced with cleaner loop points. Rearranging some code added 4 more lines to the scroller, which also improves the sound quality since the display and audio are interleaved.
 
