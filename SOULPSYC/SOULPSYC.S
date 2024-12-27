@@ -1,3 +1,15 @@
+; Soul Pschedelicide
+; Written by Zax and Vilm of The Cyberpunks
+;
+; This screen was based on the first demo we wrote together in 1989, which we submitted to ST Format magazine.
+; (They didn't publish it)
+;
+; It was almost entirely rewritten in 1991 for The Pleasuredemo - I think only the colour scheme and the font survived.
+;
+; The music has been removed for the Github version, since it was all ripped.
+;
+; I will try to update the code with comments and named constants in a future update
+
 screen	equ $78000
 
 	; check for magic value indicating we were called from the bootstrap

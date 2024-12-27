@@ -1,3 +1,8 @@
+; Reflexions
+; Written in 1991 by Zax of The Cyberpunks
+; Cleaned up and commented in 2024
+; Music has been removed for the Github version.
+
 screen_width		equ 160		; Width of the screen in bytes
 screen_extra_bytes	equ 256*35	; Approximation (has to be a multiple of 256)
 screen_size		equ 32000+screen_extra_bytes
